@@ -19,7 +19,7 @@ I often come across items of interest while on my iPhone or iPad that requires m
 
 1. Install the Drafts action, by [clicking here][drafts-url] while on iOS.
 2. Run this in the Terminal: `mkdir ~/Dropbox/utilities/open-url/to-open-url`(we're just making a new directory for Hazel to watch)
-3. Import the Hazel Rule. 
+3. Import the Hazel Rule, which can be [downloaded here](https://github.com/EvanLovely/drafts-hazel--open-url/raw/master/to-open-url.hazelrules).
 
 
 ## What's happening under the hood
