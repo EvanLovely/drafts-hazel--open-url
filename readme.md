@@ -18,7 +18,7 @@ I often come across items of interest while on my iPhone or iPad that requires m
 ## How to install 
 
 1. Install the Drafts action, by copying the Drafts Install URL below and pasting into Safari's URL bar while on iOS.
-2. Run this in the Terminal: `mkdir ~/Dropbox/utilities/open-url/to-open-url`(we're just making a new directory for Hazel to watch)
+2. Run this in the Terminal: `mkdir -p ~/Dropbox/utilities/open-url/to-open-url`(we're just making a new directory for Hazel to watch)
 3. Import the Hazel Rule, which can be [downloaded here](https://github.com/EvanLovely/drafts-hazel--open-url/raw/master/to-open-url.hazelrules).
 
 ### Drafts Install URL
