@@ -23,7 +23,7 @@ I often come across items of interest while on my iPhone or iPad that requires m
 
 ### Drafts Install URL
 
-        drafts://x-callback-url/import_action?type=dropbox&name=Open%20URL%20on%20laptop&path=%2FActions%2FOpen-URL%2F&filenametype=0&filename=&ext=txt&writetype=0&template=%5B%5Bdraft%5D%5D
+	drafts://x-callback-url/import_action?type=dropbox&name=Open%20URL%20on%20laptop&path=%2FActions%2FOpen-URL%2F&filenametype=0&filename=&ext=txt&writetype=0&template=%5B%5Bdraft%5D%5D
         
 *I tried just linking it, but GitHub strips out the `href` of the link, so I did this instead.*
 
@@ -31,7 +31,9 @@ I often come across items of interest while on my iPhone or iPad that requires m
 
 You can create a JavaScript bookmarklet that will automatically place the URL into Drafts and then run the action "Open on laptop"
 
-<a href="javascript:window.location='drafts://x-callback-url/create?text='+encodeURIComponent(location.href)+'&action=Open%20URL%20on%20laptop'">Drag this to your bookmarks bar</a>
+To install as a bookmarklet use the following in a bookmark URL:
+
+    javascript:window.location='drafts://x-callback-url/create?text='+encodeURIComponent(location.href)+'&action=Open%20URL%20on%20laptop'
 
 ## What's happening under the hood
 
