@@ -27,6 +27,12 @@ I often come across items of interest while on my iPhone or iPad that requires m
         
 *I tried just linking it, but GitHub strips out the `href` of the link, so I did this instead.*
 
+### Bookmarklet for Safari ###
+
+You can create a JavaScript bookmarklet that will automatically place the URL into Drafts and then run the action "Open on laptop"
+
+<a href="javascript:window.location='drafts://x-callback-url/create?text='+encodeURIComponent(location.href)+'&action=Open%20URL%20on%20laptop'">Drag this to your bookmarks bar</a>
+
 ## What's happening under the hood
 
 - Drafts creates a new text file containing just the URL and uploades it to the folder that Hazel is watching for any new file.
