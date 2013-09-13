@@ -18,10 +18,23 @@ I often come across items of interest while on my iPhone or iPad that requires m
 
 ## How to install 
 
-1. Install the Drafts action, by [clicking here][drafts-url] while on iOS.
-2. Run this in the Terminal: `mkdir ~/Dropbox/utilities/open-url/to-open-url`(we're just making a new directory for Hazel to watch)
+1. Install the Drafts action, by copying the Drafts Install URL below and pasting into Safari's URL bar while on iOS.
+2. Run this in the Terminal: `mkdir -p ~/Dropbox/utilities/open-url/to-open-url`(we're just making a new directory for Hazel to watch)
 3. Import the Hazel Rule, which can be [downloaded here](https://github.com/EvanLovely/drafts-hazel--open-url/raw/master/to-open-url.hazelrules).
 
+### Drafts Install URL
+
+	drafts://x-callback-url/import_action?type=dropbox&name=Open%20URL%20on%20laptop&path=%2FActions%2FOpen-URL%2F&filenametype=0&filename=&ext=txt&writetype=0&template=%5B%5Bdraft%5D%5D
+        
+*I tried just linking it, but GitHub strips out the `href` of the link, so I did this instead.*
+
+### Bookmarklet for Safari ###
+
+You can create a JavaScript bookmarklet that will automatically place the URL into Drafts and then run the action "Open on laptop"
+
+To install as a bookmarklet use the following in a bookmark URL:
+
+    javascript:window.location='drafts://x-callback-url/create?text='+encodeURIComponent(location.href)+'&action=Open%20URL%20on%20laptop'
 
 ## What's happening under the hood
 
@@ -34,6 +47,3 @@ I often come across items of interest while on my iPhone or iPad that requires m
         open `cat "$1"`
 
 The `$1` is Hazel's variable for the current actioning file. 
-
-
-[drafts-url]: drafts://x-callback-url/import_action?type=dropbox&name=Open%20URL%20on%20laptop&path=%2FActions%2FOpen-URL%2F&filenametype=0&filename=&ext=txt&writetype=0&template=%5B%5Bdraft%5D%5D
