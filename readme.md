@@ -2,6 +2,7 @@
 
 I often come across items of interest while on my iPhone or iPad that requires my Mac for the next step (like installing new Mac software or utilites that I read about while browsing Twitter on my phone) and I feel that a few other methods are too much work: OmniFocus task to check out the URL, bookmarking it, or even tossing it into a Read Later service. I just want the URL open on my Mac and the first thing I see when I sit down to it next. This little set of utilities does that simply.
 
+[![Video Example](https://dl.dropbox.com/s/3u5hb60pa243g8k/video-thumb.png)](https://dl.dropboxusercontent.com/s/aflasqvtv69r08u/Open-URL-on-Mac.mov)
 
 ## How it's used
 
